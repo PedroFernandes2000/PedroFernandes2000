@@ -1,40 +1,96 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eu Mesmo</title>
-    <link rel="stylesheet" href="estilo.css">
+    <title>Portfólio - Desenvolvedor Junior</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div id="site">
-    <div id="cabecalho">
-        <h1 id="titulo">Pedro F. dos Santos o melhor programador de todo o mundo</h1>
-    </div>
+<body class="bg-gray-100 text-gray-900 font-sans leading-normal tracking-normal">
 
-    <div id="conteudo">
-        <div id="conteudo-direita">
-            <img id="ft" src="ftpedro.jpg" alt="Foto minha no parque das aguas">
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 p-6 text-white shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-4xl font-extrabold">Seu Nome</h1>
+            <nav>
+                <ul class="flex space-x-6 text-lg">
+                    <li><a href="#about" class="hover:text-blue-200 transition duration-300">Sobre Mim</a></li>
+                    <li><a href="#skills" class="hover:text-blue-200 transition duration-300">Habilidades</a></li>
+                    <li><a href="#contact" class="hover:text-blue-200 transition duration-300">Contato</a></li>
+                </ul>
+            </nav>
         </div>
-        <div id="conteudo-esquerda">
-            <p id="sobreeu">
- /* Muito prazer!!! <br>
-* Eu sou um aluno do Instituto Federal Campus Carmo de Minas e faço o curso técnico de Informática. <br> 
-* Tenho 16 anos de idade e estou no segundo ano do curso, por isso já posso oficialmente, fazer um <br>
-* estágio 😎   (Caso queira ter um dev estiloso como eu, favor entrar em contato).                 <br>  
-* Tenho estudado Web Design, Java, Python e C e uma das coisas que mais me ajudaram foram os <br>
-* cursos do Gustavo Guanabara, o grande professor da nossa área, foram através dos cursos dele <br>
-* que eu pude avançar em Java, POO, Banco de Dados, Git e Github <br>
-*/ <br>
+    </header>
+
+    <section id="about" class="py-16 bg-white shadow-md">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-5xl font-extrabold text-gray-800 mb-8">Muito Prazer!</h2>
+            <p class="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
+                Sou um aluno do **Instituto Federal Campus Carmo de Minas** cursando **Técnico em Informática**.
+                Tenho **16 anos** e estou no segundo ano do curso.
+                Atualmente, já sou oficialmente um <strong class="text-blue-600">Desenvolvedor Júnior</strong>! 😎
+            </p>
+            <p class="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto mt-4">
+                Estou sempre buscando novas oportunidades para aplicar e aprimorar minhas habilidades.
+                (Se você busca um dev estiloso e competente, entre em contato!)
             </p>
         </div>
-        
-    </div>
+    </section>
 
-    <div id="rodape">
+    <section id="skills" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-extrabold text-gray-800 text-center mb-10">Minhas Habilidades & Conhecimentos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-bold text-blue-600 mb-4">Web Design</h3>
+                    <p class="text-gray-700">HTML, CSS, JavaScript, e frameworks modernos como Tailwind CSS para criar interfaces de usuário responsivas e intuitivas.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-bold text-blue-600 mb-4">Linguagens de Programação</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>C</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-bold text-blue-600 mb-4">Tópicos Avançados</h3>
+                    <p class="text-gray-700 mb-2">Meus estudos foram grandemente impulsionados pelos cursos do **Gustavo Guanabara**, um professor incrível na nossa área.</p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Programação Orientada a Objetos (POO)</li>
+                        <li>Banco de Dados</li>
+                        <li>Git & GitHub (Controle de Versão)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </div>
+    <section id="contact" class="py-16 bg-gradient-to-r from-blue-600 to-indigo-700 text-white shadow-lg">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-extrabold mb-8">Entre em Contato!</h2>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+                Estou disponível para novas oportunidades e desafios. Se você tem um projeto interessante ou uma vaga que se encaixa no meu perfil, ficarei feliz em conversar!
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+                <a href="mailto:seuemail@example.com" class="bg-white text-blue-700 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-100 transition duration-300 transform hover:scale-105">
+                    Enviar Email
+                </a>
+                <a href="https://linkedin.com/in/seuperfil" target="_blank" rel="noopener noreferrer" class="bg-white text-blue-700 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-100 transition duration-300 transform hover:scale-105">
+                    Meu LinkedIn
+                </a>
+                <a href="https://github.com/seuperfil" target="_blank" rel="noopener noreferrer" class="bg-white text-blue-700 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-100 transition duration-300 transform hover:scale-105">
+                    Meu GitHub
+                </a>
+            </div>
+            <p class="mt-12 text-sm opacity-80">
+                Lembre-se de substituir "seuemail@example.com", "seuperfil" nos links do LinkedIn e GitHub pelas suas informações reais!
+            </p>
+        </div>
+    </section>
 
-  </div>
+    <footer class="bg-gray-800 p-6 text-center text-gray-300">
+        <p>&copy; 2025 Seu Nome. Todos os direitos reservados.</p>
+    </footer>
+
 </body>
 </html>
